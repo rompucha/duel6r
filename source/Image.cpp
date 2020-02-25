@@ -27,6 +27,7 @@
 
 #include <SDL2/SDL_image.h>
 #include <algorithm>
+#include <cstring>
 #include "Image.h"
 #include "Exception.h"
 #include "IoException.h"
