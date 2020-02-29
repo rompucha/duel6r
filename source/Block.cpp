@@ -33,7 +33,7 @@
 
 namespace Duel6 {
     Block::Type Block::determineType(const std::string &kind) {
-        static std::string typeNames[9] = {
+        static std::string typeNames[10] = {
                 "EMPTY_SPACE",
                 "WALL",
                 "WATER",
@@ -42,7 +42,8 @@ namespace Duel6 {
                 "FRONT_AND_BACK_SPRITE",
                 "FRONT4_SPRITE",
                 "BACK4_SPRITE",
-                "WATERFALL"
+                "WATERFALL",
+                "PORTAL"
         };
 
         auto typeBegin = std::begin(typeNames);

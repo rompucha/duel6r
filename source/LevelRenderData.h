@@ -42,6 +42,7 @@ namespace Duel6 {
         FaceList walls;
         FaceList sprites;
         FaceList water;
+        FaceList portals;
         Float32 animationSpeed;
         Float32 animWait;
 
@@ -70,6 +71,14 @@ namespace Duel6 {
             return sprites;
         }
 
+        FaceList &getPortals() {
+            return portals;
+        }
+
+        const FaceList &getPortals() const {
+            return portals;
+        }
+
         FaceList &getWater() {
             return water;
         }
@@ -82,6 +91,8 @@ namespace Duel6 {
         void addWallFaces();
 
         void addSpriteFaces();
+
+        void addPortalFaces();
 
         void addWaterFaces();
 

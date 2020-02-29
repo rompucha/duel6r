@@ -43,6 +43,7 @@ namespace Duel6 {
         Sound::Sample gameOverSound;
         Sound::Sample roundStartSound;
         Texture blockTextures;
+        Texture portalTextures;
         BackgroundList bcgTextures;
         Texture explosionTextures;
         Texture bonusTextures;
@@ -68,6 +69,10 @@ namespace Duel6 {
 
         Texture getBlockTextures() const {
             return blockTextures;
+        }
+
+        Texture getPortalTextures() const {
+            return portalTextures;
         }
 
         const BackgroundList &getBcgTextures() const {

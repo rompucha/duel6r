@@ -46,6 +46,8 @@ namespace Duel6 {
         console.printLine(Format("...Loading block textures: {0}") << D6_TEXTURE_BLOCK_PATH);
         blockTextures = textureManager.loadStack(D6_TEXTURE_BLOCK_PATH, TextureFilter::Linear, true);
         console.printLine(Format("...Loading explosion textures: {0}") << D6_TEXTURE_EXPL_PATH);
+        portalTextures = textureManager.loadStack(D6_TEXTURE_PORTAL_PATH, TextureFilter::Linear, true);
+        console.printLine(Format("...Loading portal textures: {0}") << D6_TEXTURE_PORTAL_PATH);
         explosionTextures = textureManager.loadStack(D6_TEXTURE_EXPL_PATH, TextureFilter::Nearest, true);
         console.printLine(Format("...Loading bonus textures: {0}") << D6_TEXTURE_EXPL_PATH);
         bonusTextures = textureManager.loadStack(D6_TEXTURE_BONUS_PATH, TextureFilter::Linear, true);

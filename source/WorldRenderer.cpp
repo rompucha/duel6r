@@ -62,6 +62,10 @@ namespace Duel6 {
         sprites.render(game.getResources().getBlockTextures(), true);
     }
 
+    void WorldRenderer::portals(const FaceList &portals) const {
+        portals.render(game.getResources().getPortalTextures(), true);
+    }
+
     void WorldRenderer::background(Texture texture) const {
         Int32 cw = video.getScreen().getClientWidth();
         Int32 ch = video.getScreen().getClientHeight();
@@ -457,6 +461,7 @@ namespace Duel6 {
         world.getSpriteList().render(renderer);
         invulRings(game.getPlayers());
         water(world.getLevelRenderData().getWater());
+        portals(world.getLevelRenderData().getPortals());
         youAreHere();
 
         for (const Player &hpPlayer : game.getPlayers()) {

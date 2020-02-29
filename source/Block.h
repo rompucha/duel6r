@@ -47,7 +47,8 @@ namespace Duel6 {
             FrontAndBackSprite,
             Front4Sprite,
             Back4Sprite,
-            Waterfall
+            Waterfall,
+            Portal
         };
 
     private:

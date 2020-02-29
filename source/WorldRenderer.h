@@ -74,6 +74,8 @@ namespace Duel6 {
 
         void sprites(const FaceList &sprites) const;
 
+        void portals(const FaceList &portals) const;
+
         void background(Texture texture) const;
 
         void playerRankings() const;

@@ -40,5 +40,7 @@
 {"kind":"FRONT4_SPRITE","animations":[50]},
 {"kind":"FRONT4_SPRITE","animations":[51]},
 {"kind":"FRONT4_SPRITE","animations":[52]},
-{"kind":"FRONT4_SPRITE","animations":[53]}
+{"kind":"FRONT4_SPRITE","animations":[53]},
+{"kind":"PORTAL","animations":[0,1,2,3]},
+{"kind":"PORTAL","animations":[4,5,6,7]}
 ]

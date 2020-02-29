@@ -37,6 +37,7 @@ namespace Duel6 {
     void LevelRenderData::generateFaces() {
         addWallFaces();
         addSpriteFaces();
+        addPortalFaces();
         generateWater();
     }
 
@@ -50,6 +51,7 @@ namespace Duel6 {
             animWait = 0;
             walls.nextFrame();
             sprites.nextFrame();
+            portals.nextFrame();
             water.nextFrame();
         }
     }
@@ -115,6 +117,22 @@ namespace Duel6 {
         }
 
         water.build(renderer);
+    }
+
+    void LevelRenderData::addPortalFaces() {
+        portals.clear();
+
+        for (Int32 y = 0; y < level.getHeight(); y++) {
+            for (Int32 x = 0; x < level.getWidth(); x++) {
+                const Block &block = level.getBlockMeta(x, y);
+
+                if (block.is(Block::Type::Portal)) {
+                    addSprite(portals, block, x, y, 0.25f);
+                }
+            }
+        }
+
+        portals.build(renderer);
     }
 
     void LevelRenderData::addWall(const Block &block, Int32 x, Int32 y) {
